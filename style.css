@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cv {
+    border: 1px solid #C5456B;
+    min-height: 1000px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.cv__left {
+    position: relative;
+    background-color: white;
+    padding: 40px 25px;
+}
+
+.cv__left__content {
+    margin-top: 50px;
+    height: 97%;
+    border-radius: 20px;
+    background-color: black;
+    /* margin-bottom: 40px; */
+    padding-bottom: 30px;
+}
+
+.cv__left__avatar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv__left__img {
+    min-width: 230px;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: -50px;
+    border-radius: 20px;
+}
+
+.cv__left__text {
+    color: white;
+    font-size: 15px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+
+
+.cv__left__text__title, .cv__right__text__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-title-left, .info-title-right {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.info-title-right{
+    font-size: 30px;
+}
+
+.cv__left__text__title--color-bar, .cv__right__text__title--color-bar {
+    width: 65px;
+    height: 7px;
+    background-color: #E44E7B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cv__right__text__title--color-bar {
+    width: 150px;
+}
+
+.cv__left__text h3 {
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.programming-language,
+.frameworks {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.frameworks {
+    margin-top: 20px;
+}
+
+.education-item {
+    margin-top: 30px;
+}
+
+.education-item .education-year {
+    font-size: 13px;
+}
+
+.education-item,
+.education-major,
+.education-university {
+    font-weight: 400;
+}
+
+.education-item .education-major {
+    font-size: 16px;
+    color: #C5456B;
+}
+
+
+
+.percent {
+    margin-left: 20px;
+    width: 65%;
+    height: 7px;
+    background-color: #4C1F2D;
+    position: relative;
+    display: block;
+}
+
+.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    background-color: #E44E7B;
+}
+
+li {
+    text-decoration: none;
+}
+
+h3 a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+h3 a:hover {
+    color: #E44E7B;
+    text-decoration: underline;
+    transition: .2s;
+}
+
+.cv__right {
+    position: relative;
+    padding: 40px 40px 40px 20px;
+    background-color: white;
+}
+
+.cv__right__content{
+    height: 100%;
+    width: 100%;
+}
+.cv__right__content .cv__right__profile-info{
+    height: 25%;
+    width: 100%;
+}
+.cv__right__content .cv__right__work-exp{
+    height: 50%;
+    width: 100%;
+
+}
+.cv__right__content .cv__right__reference{
+    height: 25%;
+    width: 100%;
+
+}
+
+.cv__right__content__name{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.profile-name{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.cv__right__content__position{
+    color: #C5456B;
+    font-weight: 600;
+}
+
+.cv__right__content__description{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.cv__right__content__icon__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv__right__content__icon{
+    color: #C5456B;
+    margin-top: 20px;
+    display:  inline-block;
+    font-weight: 400;
+}
+
+ul li{
+    color: #C5456B;
+}
+
+.work-exp__list{
+    margin-left: 20px;
+}
+
+.work-exp__time{
+    margin-top: 10px;
+}
+
+.work-exp__position{
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+}
+
+.work-exp__company{
+    color: rgb(87, 87, 87);
+    margin: 15px 0;
+}
+
+.work-exp__description{
+    color: rgb(87, 87, 87);
+}
+
+.reference-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.reference-item{
+    margin-right: 20px;
+}
+
+.reference-item__title{
+    color: #C5456B;
+    font-size: 20px;
+}
+
+.reference-item__name, .reference-item__email, .reference-item__phone{
+    color: rgb(87, 87, 87);
+    margin-left: 22px;
+} 
+
+@media screen and (max-width: 1160px) {
+    .cv {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid #C5456B;
+    }
+
+    .cv__right{
+        height: 120%;
+    }
+    
+    body{
+        height: 130%;
+    }
+}
